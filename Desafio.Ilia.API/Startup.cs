@@ -42,6 +42,8 @@ namespace Desafio.Ilia.API
                     }
                 });
 
+                // Link de como configurar o swagger para mostrar osummary do controller: https://stackoverflow.com/questions/42018857/webapi-controller-summary-is-not-showing-on-swagger-documentation
+                // Outra config é na opção Compilar (ALT + Enter no csproj da API) marcar a opção: Arquivo de documentação XML
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
