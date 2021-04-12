@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Desafio.Ilia.API</name>
+    </assembly>
+    <members>
+        <member name="M:Desafio.Ilia.API.Controllers.ClientController.Get">
+            <summary>
+            Obtêm todos os clientes, independentemente de estarem relacionados
+            </summary>
+            <returns>A lista geral de clientes</returns>
+        </member>
+        <member name="M:Desafio.Ilia.API.Controllers.ClientController.GetTree">
+            <summary>
+            Obtêm os clientes relacionados entre sí
+            </summary>
+            <returns>Retorna a lista de clientes e seus companheiros que vivem junto com todos os seus dados</returns>
+        </member>
+        <member name="M:Desafio.Ilia.API.Controllers.ClientController.Get(System.Guid)">
+            <summary>
+            Obtêm o cliente a partir do ID informado
+            </summary>
+            <param name="id">Identificador do cliente</param>
+            <returns>Retorna o cliente com o id informado com todos os seus dados</returns>
+        </member>
+        <member name="M:Desafio.Ilia.API.Controllers.ClientController.Post(Desafio.Ilia.Domain.Entitities.Client)">
+            <summary>
+            Insere um novo cliente no banco de dados
+            </summary>
+            <param name="value">Os dados do cliente para serem salvos no banco</param>
+            <returns>Retorna uma mensagem informando se deu certo ou não</returns>
+        </member>
+        <member name="M:Desafio.Ilia.API.Controllers.ClientController.Put(Desafio.Ilia.Domain.Entitities.Client)">
+            <summary>
+            Altera os dados do cliente no banco de dados
+            </summary>
+            <param name="value">Os dados do cliente para serem alterados no banco</param>
+            <returns>Retorna uma mensagem informando se deu certo ou não</returns>
+        </member>
+        <member name="M:Desafio.Ilia.API.Controllers.ClientController.Delete(System.Guid)">
+            <summary>
+            Exclui os dados do cliente no banco de dados a partir do id informado
+            </summary>
+            <param name="id">Identificação do cliente a ser excluído do banco</param>
+            <returns>Retorna uma mensagem informando se deu certo ou não</returns>
+        </member>
+    </members>
+</doc>
